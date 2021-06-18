@@ -1,0 +1,289 @@
+/*Elemento padre de los ejemplos*/
+
+.padre {
+    display: flex;
+    height: 250px;
+    margin: 20px 0 35px 0;
+    background: rgba(77,70,70,0.9);
+    box-shadow: 10px 10px 5px 0 rgba(77,70,70,0.3);
+}
+
+/*Elemento hijo de los ejemplos*/
+
+.hijo {
+    width: 45px;
+    height: 45px;
+    background: #9CA4C9;
+    text-align: center;
+    margin: 15px;
+}
+
+.direction {
+    flex-direction: row;
+}
+
+
+.row {
+    flex-direction: row;
+}
+
+.row:active {
+    flex-direction: column;
+
+}
+
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.row-reverse:active {
+    flex-direction: column-reverse;
+}
+
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap:active {
+    flex-wrap: nowrap;
+}
+
+
+.start {
+    justify-content: flex-start;
+}
+
+.start:active {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.end {
+    justify-content: flex-end;
+}
+
+.end:active {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.space {
+    justify-content: space-between;
+}
+
+.space:active {
+    justify-content: space-around;
+}
+
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-around:active {
+    flex-direction: column;
+}
+
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-between:active {
+    flex-direction: column;
+}
+
+
+.center {
+    justify-content: center;
+}
+
+.center:active {
+    flex-direction: column;
+}
+
+
+.aling {
+    align-items: center;
+}
+
+.aling:active {
+    flex-direction: column;
+}
+
+
+.aling-end {
+    align-items: flex-end;
+}
+
+.aling-end:active {
+    flex-direction: column;
+}
+
+
+.fondo {
+    background: white;
+}
+
+.self {
+    align-self: flex-start;
+}
+
+.self-1 {
+    align-self: flex-end;
+}
+
+.order {
+    order: -1;
+}
+
+
+/*Semantica  estilo*/
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    padding: 2%;
+    color: white;
+    line-height: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 600%;
+    color: white;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 440%;
+    line-height: 80%;
+}
+
+h4 {
+    font-size: 200%;
+    background: #9CA4C9;
+    color: #000000;
+}
+
+p {
+    font-size: 30px;
+}
+
+ul li {
+    font-size: 30px;
+}
+
+/*Elemento padre de las secciones*/
+
+main .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/*Elemento hijo, sección*/
+
+section {
+    width: 43%;
+    border: groove 10px darkslategray;
+    padding: 0 2%;
+    margin: 2% 0 6% 0;
+    background-color: #232321;
+}
+
+/*Elemento pade del menú de navegación*/
+
+nav {
+    background: #DA8E8E;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 10% 0;
+}
+
+/*Elemento hijo del munú de navegacióñ*/
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 1%;
+    flex-basis: 3%;
+    border: solid 3px #894949;
+    flex-grow: 1;
+    align-items: center;
+    font-size: 30px;
+}
+
+span {
+    background: rgba(227, 227, 169, 0.8);
+    color: black;
+    font-size: 30px;
+}
+
+
+.nota {
+    background-color: #894949;
+    padding: 0.4% 2%;
+    color: white;
+    margin: 5% 0;
+    width: 95%;
+    text-align: center;
+}
+
+
+.nota h2 {
+    background-color: #894949;
+}
+
+.nota p {
+    background-color: #894949;
+}
+
+.borde {
+    border: #ffffff 1px solid;
+    margin: 5px;
+}
+
+
+
+footer {
+    text-align: center;
+
+}
+
+
+@media ( min-width: 0) and (max-width: 800px) {
+    a{
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 240%;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    span {
+        font-size: 28px;
+    }
+
+
+}
+
+
+

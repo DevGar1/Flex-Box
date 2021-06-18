@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a5faad544a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <h1>Flex-box</h1>
+
+    <nav id="nav">
+        <a href="#direction">Flex-direction</a>
+        <a href="#wrap">Flex-wrap</a>
+        <a href="#justify-content">Justify-content</a>
+        <a href="#aling">Aling-items</a>
+        <a href="#self">Aling-self</a>
+        <a href="#order">Order</a>
+    </nav>
+</header>
+<main>
+
+    <div id="nota" class="nota">
+        <p>
+            Flexbox es un modelo de diseño en CSS3, un valor a la propiedad display que nos permite hace una mejor y más
+            siemple maquetación de nuestra página web, obviamente teniendo un estilo Responsive Desing
+        </p>
+        <h2>Nota:</h2>
+        <p>
+            Para hacer todos los ejercicios se necesita tener un contenedor padre que tenga por lo menos dos hijos
+            dentro
+            de él. Los atributos se colocan en el .
+        </p>
+        <p>
+            Presiona el fondo de todos los ejemplos.
+        </p>
+        <img style="text-align: center" src="images/flex-components.png"
+             alt="Requisito para usar flexbox">
+    </div>
+
+    <div class="sections">
+
+        <section id="direction">
+            <h3>Flex-direction</h3>
+            <p>
+                Flexbox trabaja con dos ejes y se pueden visualizar como una cruz. Por default el eje principal es
+                horizontal y el secundario es vertical, pero esto se puede invertir.
+            </p>
+            <p>El valor por default es <span>row</span> Pero si das click en el fondo puedes apreciar como se ve con el
+                valor<span> column</span>.
+            </p>
+            <div class="padre row">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+            <p>Tambien se puede invertir el orden.</p>
+            <p><span> row-reverse</span> es el valor por default y
+                <span>column-reverse</span>
+                cuando das click en el fondo.</p>
+            <div class="padre row-reverse">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+        </section>
+        <section id="wrap">
+            <h3>Flex-wrap</h3>
+            <p>
+                La propiedad <span>flex-wrap</span> le indica al navegador si va a permitir que el contenido se desborde
+                cuando aumenten
+                los hijos o se disminuya el tamaño del padre.
+            </p>
+            <p><span>nowrap</span> es el valor por default. Esto indica que apesar de que los hijos necesiten más
+                espacio no se va a desbordar.
+            </p>
+            <p>
+                Al dar click se activa<span>nowrap</span>,que le indica al navegador mantener el contenido
+                en una linea.
+            </p>
+            <div class="padre wrap">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+                <div class="hijo borde">D</div>
+                <div class="hijo borde">F</div>
+                <div class="hijo borde">G</div>
+                <div class="hijo borde">H</div>
+                <div class="hijo borde">I</div>
+                <div class="hijo borde">J</div>
+                <div class="hijo borde">K</div>
+                <div class="hijo borde">L</div>
+                <div class="hijo borde">M</div>
+                <div class="hijo borde">N</div>
+                <div class="hijo borde">O</div>
+
+
+            </div>
+        </section>
+        <section id="justify-content">
+            <h3>Justify-content</h3>
+            <p>
+                Como ya se había mencionado, flex-box trabaja con dos ejes y es importante recordar esto porque esta
+                propiedad trabaja con el eje principal y dependerá de la dirección que previamente hayamos elegido.
+            </p>
+            <p>Estas son las propiedades que se pueden usar:</p>
+            <ul class="lista">
+                <li>flex-start: Alinea al principio</li>
+                <li>flex-end: Alinea al final</li>
+                <li>center: Centrar</li>
+                <li>space-around: Tener espacio a los costados de los elementos hijos</li>
+                <li>space-between: Tener el primer y último elemento a los extremos y los demas con un margen en los dos
+                    costados
+                </li>
+            </ul>
+
+            <p>Esta propiedad, <span> flex-start (Con eje principal horizontal y vertical) </span>, es la que viene por
+                default con flex.</p>
+            <div class="padre start">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+            <p><span> flex-end (Con eje principal horizontal y vertical)</span> Muestra a los elementos del lado
+                contrario al valor de la propiedad pasada.</p>
+            <div class="padre end">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+        </section>
+        <section id="justify-content1">
+            <h3>Justify-content</h3>
+            <p>La propiedad <span>space-around (Con eje principal horizontal y vertical)</span> crea un espacio en los
+                costados de los elementos hijos.</p>
+            <div class="padre space-around">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+
+            <p>En <span> space-between (Con eje principal horizontal y vertical)</span> se observa como coloca al primer
+                y último elemento en los extremos y crea un espacio entre cada
+                elemento.</p>
+            <div class="padre space-between">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+            <p><span> Center (Con eje principal horizontal y vertical)</span> Es una de las propiedades más utiles de
+                flex-box, ademas de ser fácil intuir lo que hace. Centra todo el
+                contenido dependiendo del eje principal.
+            </p>
+            <div class="padre center">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+        </section>
+        <section id="aling">
+            <h3>Aling-items</h3>
+            <p>
+                La propiedad <span>aling-items</span> trabaja exclusivamente con el eje secundario. En este caso si el
+                eje principal es vertical, el secundario es horizontal y viceversa.
+            </p>
+            <p>
+                Los valores más importantes de esta propiedad son:
+            </p>
+            <ul>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+            </ul>
+            <p>Para el primer ejemplo se usa el valor <span>center</span> que es muy útil a la hora de crear páginas.
+            </p>
+            <div class="padre aling">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+            <p>El siguiente valor es <span>flex-end</span>, alinea al final del eje secundario.</p>
+            <div class="padre aling-end">
+                <div class="hijo borde">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+            </div>
+            <p>
+                No se tiene un ejemplo de <span>flex-start</span> porque es el valor por default y se observa en el
+                primer ejemplo de <span>justify-content</span>.
+            </p>
+        </section>
+        <section id="self">
+            <h3>Aling-self</h3>
+            <p>
+                Esta propiedad, a diferencia de las demas, debe de ir en el componente hijo. <span> Aling-self</span>
+                acomoda
+                individualmente a los componentes hijos con las mismas propiedades que <span>alins-items</span>.
+            </p>
+            <p>
+                El primer hijo tiene un <span>flex-start</span>, el segundo <span>center</span> y el tercero tiene el
+                valor de <span>flex-end</span>.
+            </p>
+            <div class="padre aling center">
+                <div class="hijo borde self">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde self-1">C</div>
+            </div>
+        </section>
+        <section id="order">
+            <h3>Flex-order</h3>
+            <p>
+                Por ultimo vemos ela propiedad <span>flex-order</span> que ordena los elementos hijos al igual que la
+                propiedad pasada, tambien se le asigna al hijo. El valor que le podemos dar es un numero entero
+                negativo, cero o positivo. Entre más pequeño sea el valor del núnmero, se ordena primero
+            </p>
+            <p>El valor por default es cero. Cambiaremos el valor a -1 de algunos elementos como ejemplo.
+            <div class="padre wrap">
+                <div class="hijo borde order">A</div>
+                <div class="hijo borde">B</div>
+                <div class="hijo borde">C</div>
+                <div class="hijo borde order">D</div>
+                <div class="hijo borde">F</div>
+                <div class="hijo borde">G</div>
+                <div class="hijo borde">H</div>
+                <div class="hijo borde">I</div>
+                <div class="hijo borde order">J</div>
+                <div class="hijo borde">K</div>
+            </div>
+            <p>
+                Se observa que cambia el orden en que se presentan los elementos.
+            </p>
+        </section>
+
+    </div>
+    <footer>
+        <p class="foo">
+            Toda la página usa flex-box. Si quieres ver el proyecto completo te invito a visitar
+            mi Github.
+        </p>
+        <a href="https://github.com/DevGar1">
+            <i class="fab fa-github fa-5x" style="color:#FFFFFF; height: 100px;"></i>
+        </a>
+    </footer>
+</main>
+</body>
+</html>
