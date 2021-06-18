@@ -1,0 +1,38 @@
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: 300%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    p {
+        font-size: 80%;
+    }
+
+    span {
+        font-size: 28px;
+    }
+
+    section h3 {
+        font-size: 280%;
+    }
+
+    section p {
+        font-size: 180%;
+    }
+
+    .message {
+        display: none;
+    }
+
+
+}
+
